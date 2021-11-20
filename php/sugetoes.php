@@ -29,13 +29,17 @@
             </ul>
         </div>
     </nav>
-<br>
+    <br>
 
     <div class="conteiner-fluid">
         <div class="row">
 
             <?php
             include_once("./conexao.php");
+
+            $timezone = new DateTimeZone('America/Sao_Paulo');
+            $Data = new DateTime('now',$timezone);
+            
 
 
 
@@ -69,7 +73,7 @@
                         <div class="row" >
                             <span class="col s4 left-align curso ">' . $Curso . '</span>
                             <span class="col s4 center-align vermelho">' . $Nome . '</span>
-                            <span class="col s4 right-align">Data</span>
+                            <span class="col s4 right-align">'.$Data->format('d/m/Y H:i'). '</span>
                         </div>
                     </div>
                 </div>

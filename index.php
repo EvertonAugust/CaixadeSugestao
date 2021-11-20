@@ -30,7 +30,8 @@ require_once './php/conexao.php'
             <a href="#" class="brand-logo right"><img style="height: 50px;margin: 5px;" src="./img/questionario.png" alt="Logo"></a>
             <p style="font-weight: bolder;font-size:30px;margin-left: 10px;">Formulário - Caixa de Sugestões</p>
         </div>
-    </nav><pre>
+    </nav>
+    <pre>
     </pre>
     <div class="container caixa">
         <div class="row">
@@ -86,14 +87,14 @@ require_once './php/conexao.php'
                         <a href="./php/sugetoes.php"><button class="waves-effect waves-light btn-large" type="submit" name="action">Enviar
 
                             </button>
-                            <pre>
 
-                            </pre>
 
                     </div>
                 </form>
             </div>
         </div>
+        <pre>
+                            </pre>
 
     </div>
 
