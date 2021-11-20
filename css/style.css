@@ -1,0 +1,38 @@
+.imagem_tamanho {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.sombra_div {
+    -webkit-box-shadow: 2px -1px 31px -4px #000000; 
+    box-shadow: 2px -1px 31px -4px #000000;
+}
+
+.titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    
+}
+
+.vermelho {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+.curso{
+    font-size: 15px;
+    height: 10px;
+    
+}
+#application{
+    background-color: #ebecec;
+}
+
+.caixa{
+    background-color: white;
+}
