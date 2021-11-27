@@ -38,12 +38,7 @@
             include_once("./conexao.php");
 
             $timezone = new DateTimeZone('America/Sao_Paulo');
-            $Data = new DateTime('now',$timezone);
-            
-
-
-
-
+            $Data = new DateTime('now', $timezone);
 
             $sql = 'SELECT * FROM caixa_de_sugestao ';
 
@@ -54,6 +49,8 @@
                 $Nome = $linha['NOME'];
                 $Tipo = $linha['TIPO'];
                 $Comentario = $linha['COMENTARIO'];
+                $data = $linha['DATA'];
+                $hora = $linha['HORA'];
 
                 $url_imagem = getImageUrl($Tipo);
 
@@ -73,7 +70,7 @@
                         <div class="row" >
                             <span class="col s4 left-align curso ">' . $Curso . '</span>
                             <span class="col s4 center-align vermelho">' . $Nome . '</span>
-                            <span class="col s4 right-align">'.$Data->format('d/m/Y H:i'). '</span>
+                            <span class="col s4 right-align">' . $data . '<br><p style="margin-right:10px;">' . $hora . '</p></span>
                         </div>
                     </div>
                 </div>
@@ -104,7 +101,7 @@
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <img src="../" alt="">
+    <img src="./" alt="">
 </body>
 
 </html>

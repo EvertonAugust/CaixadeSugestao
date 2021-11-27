@@ -9,7 +9,7 @@ $comentario = $_GET['U_COMENTARIO'];
 
 $consulta = "INSERT INTO caixa_de_sugestao (`NOME`, `CURSO`, `TIPO`, `COMENTARIO`) VALUES ('$nome', '$curso', '$tipo', '$comentario')";
 
-
+//$consulta = $sql
 $retorno = mysqli_query($conexao, $consulta);
 
 if($retorno){
@@ -22,3 +22,4 @@ if($retorno){
 
 
 ?>
+
